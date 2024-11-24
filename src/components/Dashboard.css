@@ -1,20 +1,3 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* Dashboard Container */
 .dashboard {
   font-family: Arial, sans-serif;
@@ -175,4 +158,38 @@ li button:hover {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
+}
+
+.task {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-info {
+    flex-grow: 1;
+}
+
+.priority {
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.priority.high {
+    background-color: red;
+}
+
+.priority.medium {
+    background-color: orange;
+}
+
+.priority.low {
+    background-color: green;
 }
